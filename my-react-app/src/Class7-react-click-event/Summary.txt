@@ -1,0 +1,22 @@
+Click event = an interaction made when a user clicks on a specific element. The interaction is responded
+by sending a callback to the onClick event handler.
+Ex.:
+function handleClick() {
+  console.log('I was clicked');
+}
+
+<button onClick={handleClick}>Click me</button>
+This will log 'I was clicked' to the console when the button is clicked.
+
+event argument: with click events we are automatically provided with an event argument, it is an object
+that describes the event that occurred. When used as a parameter in a function, it is often referred to as "e".
+
+To use it, we can pass it as a parameter to the function that calls the callback function.
+Ex.: <button onClick={(e) => handleClick(e)}>Click me</button>
+
+Also, it allows us to access and alter the event object and its properties.
+Ex.: function handleClick(e) {
+  e.target.style.backgroundColor = 'blue';
+}
+This will change the background color of the element that was clicked to blue.
+

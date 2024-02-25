@@ -1,0 +1,32 @@
+Step by step for rendering lists:
+
+1. Create a list of items. Ex.: const list = ['item1', 'item2', 'item3']
+2. Map the list of items using the map method, passing a function. Ex.: const listItems list.map(item => <li>{item}</li>)
+3. Return the mapped list inside a parent element. Ex.: <ul>{listItems}</ul>
+
+Optional:
+1. You can create an array of objects instead of strings. Ex.: const list = [{id: 1, name: 'item1'},
+{id: 2, name: 'item2'}, {id: 3, name: 'item3'}].
+2. The process to render is the same, but each object in the list should have a unique key prop.
+Ex.: const listItems list.map(item => <li key = id.>{item.name}, {item.id}</li>)
+Obs.: If the items displayed properties are not unique, you should create an unique id for the list, like the
+example above.
+
+Sorting lists:
+
+You can sort lists in many ways using the sort method.
+FruitList.sort() will sort the list in ascending order. But this can only be used with lists with one type of data.
+
+To sort a list with different types of data, you should pass a function to the sort method,
+defining the sorting criteria.
+
+1. Numerical ascending order: FruitList.sort((a, b) => a - b). Only used in numbers, to reverse the order, use b - a.
+2. Alphabetical ascending order: FruitList.sort((a, b) => a.localeCompare(b)). Only used in strings,
+to reverse the order, use b.localeCompare(a).
+
+Filtering lists:
+
+You can also filter lists using the filter method. To filter a list,
+you should pass a function to the filter method, defining the filtering criteria.
+Ex.: const filteredList = list.filter(item => item.id > 10). This will return a new list with all
+items with id greater than 10.

@@ -1,3 +1,4 @@
 Conditional rendering: used to control what gets rendered in your application based on certain conditions.
 Allowing you to show, hide and change components.
-Ex.:
+Ex.: return(props.isLoggedIn ? welcomeMessage : loginPrompt);
+(If the user is logged in, show the welcome message, otherwise show the login prompt)
