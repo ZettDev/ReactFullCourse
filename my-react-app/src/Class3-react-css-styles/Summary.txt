@@ -1,0 +1,6 @@
+Styling components with CSS
+(without external frameworks or preprocessors)
+
+1. External: great for global styles or small projects
+2. Modules: preferred for individual components that have unique styles
+3. Inline: good for small components with minimal styling (like buttons)

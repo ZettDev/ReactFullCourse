@@ -1,0 +1,11 @@
+Props = read-only properties that are shared between components. A parent component can send data to a child component.
+Ex.: <Component key= value/>
+
+Prop types = a mechanism that ensures the passed value is of the correct datatype. If the value is not of the correct
+datatype, a warning will be shown in the console. This will be used mostly for debugging purposes, and it is a good
+practice.
+Ex.: age: PropTypes.number
+
+Default props = default values for props. If the prop is not passed from the parent component,
+the default value will be used.
+Ex.: age: 0

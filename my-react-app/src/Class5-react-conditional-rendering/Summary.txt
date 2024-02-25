@@ -1,0 +1,3 @@
+Conditional rendering: used to control what gets rendered in your application based on certain conditions.
+Allowing you to show, hide and change components.
+Ex.:
