@@ -1,0 +1,10 @@
+.calculator-button{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+.reset-button{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+}
